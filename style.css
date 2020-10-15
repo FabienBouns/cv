@@ -14,6 +14,50 @@ li a {
     padding: 1%;
 }
 
+.bouton_info {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2d2f3a;
+    padding: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    margin: 1%;
+
+}
+
+.info{
+    padding-top: 3%;
+}
+
+.bouton_info:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    margin: 0.5%;
+}
+
+.insta{
+    background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 2%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.linkedin{
+    background: #0274b3;
+}
+
+.ytb{
+    background: #d61C27;
+}
+
+.twitch{
+    background: #6541a5;
+}
+
 li a:hover {
     text-decoration: none;
     transform: scale(1.2);
@@ -178,6 +222,23 @@ footer {
     text-align: center;
     margin-top: 2%;
     margin-bottom: 3%;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "ProfilePicture buttonInfo";
+
+    margin-top: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+
+.buttonInfo{
+    grid-area: buttonInfo;
+    margin-left: 10%;
 }
 
 .Projet h3 {
@@ -545,6 +606,12 @@ menu{
         padding-bottom: 10px;
     }
 
+    .information {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
     .profilePicture{
         text-align: center;
     }
@@ -554,7 +621,7 @@ menu{
     }
 }
 
-@media only screen and (max-device-width:460px) {
+@media only screen and (max-device-width:590px) {
     li {
         display: block;
         padding-left: 2%;
